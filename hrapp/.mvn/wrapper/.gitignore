@@ -1,0 +1,16 @@
+# IDE dosyaları
+.idea/
+*.iml
+
+# Build klasörü
+/target/
+
+# Log dosyaları
+*.log
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Sensitive config
+src/main/resources/application.yml
