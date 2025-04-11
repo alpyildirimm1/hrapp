@@ -25,7 +25,7 @@ public class User {
         ROLE_EMPLOYEE
     }
 
-    // Getter ve Setter'lar
+    // Getter ve Setter
     public Long getId() {
         return id;
     }

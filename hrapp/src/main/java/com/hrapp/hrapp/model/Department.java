@@ -34,24 +34,7 @@ public class Department {
 
 
 
-/*
-    public Department() {
-    }
 
-    // --- Tüm alanları içeren constructor ---
-    public Department(Long departmentId, String name, String description, String goals,
-                      String budget, String performanceReports,
-                      List<Employee> employees, Employee manager) {
-        this.departmentId = departmentId;
-        this.name = name;
-        this.description = description;
-        this.goals = goals;
-        this.budget = budget;
-        this.performanceReports = performanceReports;
-        this.employees = employees;
-        this.manager = manager;
-    }
-*/
 
 
     public Long getDepartmentId() {

@@ -56,33 +56,6 @@ public class Employee {
 
 
 
-/*
-    public Employee() {
-    }
-
-    // --- Tüm parametreleri alan constructor ---
-    public Employee(Long employeeId, String firstName, String lastName, LocalDate birthDate, String email, String phone,
-                    String address, LocalDate hireDate, String emergencyContact, String educationHistory,
-                    String certifications, String performanceRecords, Department department, Position position,
-                    Employee manager, List<Employee> subordinates) {
-        this.employeeId = employeeId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthDate = birthDate;
-        this.email = email;
-        this.phone = phone;
-        this.address = address;
-        this.hireDate = hireDate;
-        this.emergencyContact = emergencyContact;
-        this.educationHistory = educationHistory;
-        this.certifications = certifications;
-        this.performanceRecords = performanceRecords;
-        this.department = department;
-        this.position = position;
-        this.manager = manager;
-        this.subordinates = subordinates;
-    }
-*/
 
     public Long getEmployeeId() {
         return employeeId;

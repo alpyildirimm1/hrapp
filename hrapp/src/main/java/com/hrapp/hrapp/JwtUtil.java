@@ -13,7 +13,7 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    
+    //
     private final SecretKey SECRET_KEY = Keys.hmacShaKeyFor("hrapp-secret-hrapp-secret-hrapp-secret".getBytes());
 
     public String generateToken(String username) {

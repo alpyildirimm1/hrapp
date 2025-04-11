@@ -22,7 +22,7 @@ public class AuthController {
     @Autowired
     private JwtUtil jwtUtil;
 
-    // 🔐 LOGIN
+    
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> loginData) {
         String username = loginData.get("username");
@@ -39,7 +39,7 @@ public class AuthController {
         return ResponseEntity.ok(Collections.singletonMap("token", token));
     }
 
-    // 📝 REGISTER
+
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody Map<String, String> registerData) {
         String username = registerData.get("username");

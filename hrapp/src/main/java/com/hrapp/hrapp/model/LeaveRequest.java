@@ -16,14 +16,14 @@ public class LeaveRequest {
     private LocalDate startDate;
     private LocalDate endDate;
 
-    private String type;   // Örn: Annual, Sick, Unpaid
-    private String status; // Örn: Pending, Approved, Rejected
+    private String type;
+    private String status;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
     private Employee employee;
 
-    // --- GETTER / SETTER ---
+    // GETTER / SETTER
 
     public Long getId() {
         return id;

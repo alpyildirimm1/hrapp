@@ -20,9 +20,9 @@ public class PerformanceEvaluation {
     private Long id;
 
     private LocalDate evaluationDate;
-    private String evaluator; // örn: departman müdürü
+    private String evaluator;
     private String comments;
-    private String rating; // örn: A, B, C ya da numeric (1-5)
+    private String rating;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")

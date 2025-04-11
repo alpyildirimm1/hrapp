@@ -32,25 +32,7 @@ public class Position {
     private List<Employee> employees;
 
 
-/*
-    public Position() {
-    }
 
-    // --- Tüm alanları içeren constructor ---
-    public Position(Long positionId, String title, String description, String responsibilities,
-                    String requiredSkills, String experienceLevel, String educationRequirement,
-                    String promotionPath, List<Employee> employees) {
-        this.positionId = positionId;
-        this.title = title;
-        this.description = description;
-        this.responsibilities = responsibilities;
-        this.requiredSkills = requiredSkills;
-        this.experienceLevel = experienceLevel;
-        this.educationRequirement = educationRequirement;
-        this.promotionPath = promotionPath;
-        this.employees = employees;
-    }
-*/
     // --- Getter & Setter metotları ---
 
     public Long getPositionId() {
