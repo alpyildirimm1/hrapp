@@ -69,7 +69,7 @@ public class EmployeeController {
     }
 
     // 6. Çalışan sil
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','HR')")
     @DeleteMapping("/{id}")
     public void deleteEmployee(@PathVariable Long id) {
         employeeService.deleteById(id);

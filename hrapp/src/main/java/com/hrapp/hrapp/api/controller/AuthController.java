@@ -6,6 +6,7 @@ import com.hrapp.hrapp.domain.model.User.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
@@ -34,7 +35,7 @@ public class AuthController {
         String token = authService.generateToken(username);
         return ResponseEntity.ok(Collections.singletonMap("token", token));
     }
-
+    @PreAuthorize("hasAnyRole('ADMIN', 'HR')")
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody Map<String, String> registerData) {
         String username = registerData.get("username");

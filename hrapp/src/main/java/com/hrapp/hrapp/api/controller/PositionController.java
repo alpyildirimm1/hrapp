@@ -51,7 +51,7 @@ public class PositionController {
         return positionService.updatePosition(id, updatedPosition);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','HR')")
     @DeleteMapping("/{id}")
     public void deletePosition(@PathVariable Long id) {
         positionService.deletePosition(id);
